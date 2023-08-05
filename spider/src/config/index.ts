@@ -4,7 +4,7 @@ export const config = dotenv.config();
 
 export const organiztion: string = 'cicvedu';            // 组织
 export const fullOrganization: string = '119796606-cicv-rust-classroom'; // classroom名称
-export const assignment = 'rust-os';   // assignment
+export const assignment = 'rust-arceos';   // assignment
 export const works = ['main']; // assignment 的不同情况
 export const AUTH_TOKEN = process.env['TOKEN'];
 export const SESSION_TOKEN = process.env['SESSION_TOKEN'];
