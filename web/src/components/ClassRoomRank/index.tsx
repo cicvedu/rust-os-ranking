@@ -82,20 +82,9 @@ const ClassRoomRank = (props: IProps) => {
           return <AvatarInfo rank={record.rank} avatarURL='' name={text} />
         }
       },
-      // {
-      //   title: '学生',
-      //   align: 'center',
-      //   dataIndex: 'name',
-      //   fixed: true,
-      //   width: 150,
-      //   key: 'repoOwner',
-      //   render(text: string, record: StudentInfo) {
-      //     return <AvatarInfo rank={record.rank} avatarURL={record.avatar} name={text} />
-      //   }
-      // },
       ...(props.columns.map((item, index) => {
         return {
-          title: item == 'main' ? '总分' : item,,
+          title: item == 'main' ? '总分' : item,
           dataIndex: `assignments-${item}`,
           width: 200,
           align: 'center',
@@ -193,7 +182,7 @@ const ClassRoomRank = (props: IProps) => {
             </span>
             {props.latestUpdatedAt && (
               <span style={{ fontWeight: 'bold' }}>
-                {dayjs(props.latestUpdatedAt).format('YYYY-MM-DD HH:mm::ss')}
+                {dayjs(props.latestUpdatedAt).format('YYYY-MM-DD HH:mm:ss')}
               </span>
             )}
           </div> : <></>
