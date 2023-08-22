@@ -196,6 +196,7 @@ async function getGrade() {
 }
 
 getGrade().then(()=>getApiRemaining()).then(() => {
+    console.log("JSON.stringify(JsonData) ===>", JSON.stringify(JsonData));
     // Save json data to file.
     writeFileSync('../web/src/data.json', JSON.stringify(JsonData))
 })
