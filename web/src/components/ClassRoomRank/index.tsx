@@ -188,6 +188,7 @@ const ClassRoomRank = (props: IProps) => {
           </div> : <></>
           }
         <Table
+          pagination={{showSizeChanger:true, pageSizeOptions:[10, 20, 50, 100]}}
           className="rank-table"
           scroll={{ x: 1000 }}
           rowKey={'name'}
